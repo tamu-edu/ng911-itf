@@ -4,7 +4,7 @@ Repository Name:	ng911-itf
 
 Link to bookmark:	https://github.com/tamu-edu/ng911-itf
 
-This repository is managed by the TAMU Internet2 Technology Evaluation Center (ITEC)
+This repository is managed by the Texas A&M University (TAMU) Internet2 Technology Evaluation Center (ITEC).
 
 ## Usage Policies
 
