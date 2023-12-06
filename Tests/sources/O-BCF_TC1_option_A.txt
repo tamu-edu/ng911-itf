@@ -1,0 +1,47 @@
+# edited with https://sequencediagram.org
+
+Title O-BCF Conformance TC #1 (Option A)
+
+participantgroup **IMS OSP**
+
+participant "IBCF\nSide of Test" as I-BCF
+end 
+
+participantgroup **Orginating ESInet/NGCS**
+participant #lightgreen "O_BCF\nSystem Under Test" as O-BCF
+participant "O_ESRP\nSide of Test" as O-ESRP
+end
+
+autonumber 
+linear 
+
+I-BCF-#lightgreen>O-BCF:SIP INVITE w/SDP
+O-BCF->I-BCF: 100 Trying
+O-BCF-#lightgreen>O-ESRP:SIP INVITE w/SDP
+O-ESRP->O-BCF:100 Trying
+
+parallel 
+O-ESRP->O-BCF:183 Session Progress w/SDP
+O-BCF->I-BCF:183 Session Progress w/SDP
+parallel off
+
+I-BCF->O-BCF:PRACK
+O-BCF->O-ESRP:PRACK
+
+O-ESRP->O-BCF:200 OK (PRACK)
+O-BCF->I-BCF:200 OK (PRACK)
+
+O-ESRP->O-BCF:200 OK (INVITE) 
+O-BCF->I-BCF:200 OK (INVITE) 
+
+I-BCF->O-BCF:ACK
+O-BCF->O-ESRP:ACK
+
+
+== RTP G.711 PCMU (Voice) ==
+
+O-ESRP->O-BCF:BYE
+O-BCF->I-BCF:BYE
+I-BCF->O-BCF:200 OK
+O-BCF->O-ESRP:200 OK
+

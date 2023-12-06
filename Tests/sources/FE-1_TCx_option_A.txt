@@ -1,0 +1,21 @@
+# edited with https://sequencediagram.org
+
+Title FE Conformance TC #x (Option A)
+
+participantgroup **OSP**
+
+participant "FE\nSide of Test" as FE-1
+end 
+
+participantgroup **Orginating ESInet/NGCS**
+participant #lightgreen "FE\nSystem Under Test" as FE-2
+participant "FE\nSide of Test" as FE-3
+end
+
+autonumber 
+linear 
+
+FE-1-#lightgreen>FE-2:SIP INVITE w/SDP
+FE-2->FE-1: 100 Trying
+
+== media ==
