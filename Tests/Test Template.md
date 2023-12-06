@@ -29,8 +29,9 @@ This use case tests the \... OSP-Facing BCF (O-BCF) when providing a basic call.
 
 1.  Element sends SIP INVITE w/SDP to \...
 
-![Figure1](./figures/FE_TCx_option_A.png)
-Figure 1
+| ![Figure1](./figures/FE_TCx_option_A.png) | 
+|:--:| 
+| *Figure 1* |
 
 #### Test Evaluation Steps:
 
