@@ -116,8 +116,9 @@ A. I-BCF Side of Test establishes TLS connection to O-BCF System Under Test on p
 
 18. O-ESRP Side of Test verifies the O-BCF System Under Test sent 200 OK.
 
-![Figure1](./figures/O-BCF_TC1_option_A.png)
-Figure 1
+| ![Figure1](./figures/O-BCF_TC1_option_A.png) | 
+|:--:| 
+| *Figure 1* |
 
 #### Test Evaluation Steps:
 
