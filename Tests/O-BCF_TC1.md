@@ -131,8 +131,9 @@ This use case tests the OSP-Facing BCF (O-BCF) when providing a basic call.
 18. O-ESRP Side of Test verifies the O-BCF System Under Test sent 200
     OK.
 
-![Figure1](./figures/O-BCF_TC1_option_A.png)
-Figure 1
+| ![Figure1](./figures/O-BCF_TC1_option_A.png) | 
+|:--:| 
+| *Figure 1* |
 
 #### Test Evaluation Steps:
 
