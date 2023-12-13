@@ -49,6 +49,8 @@ Variations are described in O-BCF TC1
 
 A. I-BCF Side of Test establishes TLS connection to O-BCF System Under Test on port 5061, using mutual authentication.
 
+B. I-BCF Side of Test verifies it has a TCP connection with TLS established.
+
 1.  I-BCF Side of Test sends SIP INVITE w/SDP to the O-BCF System Under
     Test
 
